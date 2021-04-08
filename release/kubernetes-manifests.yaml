@@ -310,7 +310,7 @@ metadata:
     # If you encounter a redirect loop or are getting a 307 response code 
     # then you need to force the nginx ingress to connect to the backend using HTTPS.
     #
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    # nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
   rules:
   - host: hipster-shop.35.232.106.138.xip.io
@@ -318,7 +318,7 @@ spec:
       paths:
       - backend:
           serviceName: frontend-external
-          servicePort: https
+          servicePort: http
         path: /
   tls:
   - hosts:
