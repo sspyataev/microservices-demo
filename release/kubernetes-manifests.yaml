@@ -313,7 +313,7 @@ metadata:
     # nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
   rules:
-  - host: hipster-shop.35.222.183.8.xip.io
+  - host: hipster-shop.34.123.237.22.xip.io
     http:
       paths:
       - backend:
@@ -322,7 +322,7 @@ spec:
         path: /
   tls:
   - hosts:
-    - hipster-shop.35.222.183.8.xip.io
+    - hipster-shop.34.123.237.22.xip.io
 ---
 apiVersion: apps/v1
 kind: Deployment
